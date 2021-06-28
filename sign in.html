@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-in</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initail-scale=1"><!--element with name="viewport" makes the website look good on all devices and screen resolutions-->
+	<link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script type="text/javascript">
+		function validate()
+		{
+			if(document.contact.name.value == "")
+			{
+				alert("Please provide your name!");
+				document.contact.name.focus();
+				return false;
+			}
+			if(document.contact.password.value == "")
+			{
+				alert("Please provide your password!");
+				document.contact.password.focus();
+				return false;			
+			}
+		}
+		function show_alert()
+		{
+			alert("***\\\\Please wait!//***\nchecking details...");
+		}
+	</script>
+</head>
+<body>
+<div class="navbar" >
+	<a href="index.html"><i class="fas fa-home"></i>Home</a>
+	<a href="team.html">Our Team</a>
+	<a href="mv.html">Mission & Vission</a>
+	<a href="deals.html">Dealers</a>
+	<a href="contact.html">Contact Us</a>
+	<a href="island shops.html">Island wide shops</a>
+	<div class="search-container">
+		<form action="">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+	</div>
+</div>
+
+	<div class="SignInBox" >
+	<img src="Slideshow-image/avatar.jpg" class="avatar">
+		<h1>Sign-in Here</h1>
+		<form action="login.php" method="post" name="contact" onsubmit="return validate()">
+			<p>User name:</p>
+			<input type="text" name="name" placeholder="Enter Username">
+			<p>Password:</p>
+			<input type="Password" name="password" placeholder="Enter Password">
+			<input type="submit" name="submit" value="Sign-in"><br>
+			<a href="#" onclick="show_alert()">Lost your password?</a><br>
+			<a href="sign up.html" onclick="show_alert()">Don't have an account?</a>
+		</form>
+	</div>
+	<br><br>
+	<div class="footer-main-div">
+		<div class="footer-social-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/hashtag/login?lang=en" target="blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>Design by:Deelaka Wejith Kariyawasam</p>
+		</div>
+	</div>
+</body>
+</html>

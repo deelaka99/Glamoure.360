@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shops-Glamour.360</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initail-scale=1"><!--element with name="viewport" makes the website look good on all devices and screen resolutions-->
+	<link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<style type="text/css">
+		.side
+		{
+			flex: 70%;
+			height: 1510px;
+		}
+		.main
+		{
+			flex: 30%;
+			height: 1510px;
+		}
+		.deal-raw, .deal-column
+		{
+			padding: 0 8px;
+		}
+		.deal-raw:after
+		{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		/*Create four equal columns that floats next to each others*/
+		.deal-column
+		{
+			width: 60%;
+		}
+		.hover-shadow:hover{opacity: 0.7;}
+		.flip-box {
+			float: center;
+  			background-color: transparent;
+  			width: 500px;
+  			height: 500px;
+  			border: 1px solid #f1f1f1;
+  			perspective: 1000px;
+		}
+
+		.flip-box-inner {
+  			position: relative;
+  			width: 100%;
+  			height: 100%;
+  			text-align: center;
+  			transition: transform 0.8s;
+  			transform-style: preserve-3d;
+		}
+
+		.flip-box:hover .flip-box-inner {
+  			transform: rotateX(180deg);
+		}
+
+		.flip-box-front, .flip-box-back {
+  			position: absolute;
+  			width: 100%;
+  			height: 100%;
+  			-webkit-backface-visibility: hidden;
+  			backface-visibility: hidden;
+		}
+
+		.flip-box-front {
+  			background-color: #bbb;
+  			color: black;
+		}
+
+		.flip-box-back {
+  			background-color: dodgerblue;
+  			color: white;
+  			transform: rotateX(180deg);
+		}
+		.section a
+		{
+			color: yellow;
+			margin-left: 270px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1 style="text-align: center; text-shadow: 2px 2px;">Shops</h1>
+	</div>
+	<div class="navbar" >
+		<a href="index.html"><i class="fas fa-home"></i>Home</a>
+		<a href="team.html">Our Team</a>
+		<a href="mv.html">Mission & Vission</a>
+		<a href="deals.html">Deals</a>
+		<a href="contact.html">Contact Us</a>
+		<a href="island shops.html">Island wide shops</a>
+		<div class="search-container">
+			<form action="">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="side">
+			<div class="glamer-box">
+				<div class="content">
+					<h3>Our shops are situated in below palaces:</h3>
+					<dl>
+						<dt><i class="fas fa-street-view"></i>Nugegoda</dt>
+						<i><dd>Address:No:51/B, Stanly Thilakarathna avenue, Nugegoda.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: nugegoda@glamour360.lk/dd></i><br><br>
+						<dt><i class="fas fa-street-view"></i>Maharagama</dt>
+						<i><dd>Address:No:11/A, Pamunuwa avenue, Mahargama.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845748</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: maharagama@glamour360.lk/dd></i><br><br>
+						<dt><i class="fas fa-street-view"></i>Gamapaha</dt>
+						<i><dd>Address:No:11/A, Slave rd, Gamapaha.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845746</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: gampaha@glamour360.lk/dd></i><br><br>
+						<dt><i class="fas fa-street-view"></i>Kaluthara</dt>
+						<i><dd>Address:No:51/B, Main rd, Kaluthara.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: kaluthara@glamour360.lk/dd></i><br><br>
+						<dt><i class="fas fa-street-view"></i>Galle</dt>
+						<i><dd>Address:No:11/A, Alford rd, Galle.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845748</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: galle@glamour360.lk/dd></i><br><br>
+						<dt><i class="fas fa-street-view"></i>Mathara</dt>
+						<i><dd>Address:No:45 Main rd, Mathara.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845748</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: mathara@glamour360.lk/dd></i><br><br>
+						<dt><i class="fas fa-street-view"></i>Anuradhapura</dt>
+						<i><dd>Address:No:11/A, High level rd, Anuradhapura.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845748</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: anuradhapura@glamour360.lk/dd></i><br><br>
+						<dt><i class="fas fa-street-view"></i>Jaffna</dt>
+						<i><dd>Address:No:12, Nallur temple rd, Jaffna.</dd></i>
+						<i><dd><i class="fas fa-phone-alt"></i>: 011 2845745</dd></i>
+						<i><dd><i class="fas fa-fax"></i>: 011 2845748</dd></i>
+						<i><dd><i class="fas fa-envelope-square"></i>: jaffna@glamour360.lk/dd></i><br><br>
+					</dl>
+				</div>
+			</div>
+			<p style="text-align: center;">~Other sections~</p>
+			<div class="section">
+				<a href="women.html">Women</a><br>
+				<a href="men.html">Men</a><br>
+				<a href="kids.html">kids</a><br>
+				<a href="gift.html">Gifts</a><br>
+				<a href="watch.html">Watches</a><br>		
+			</div>
+		</div>
+		<nav class="social">
+			<ul>
+				<li class="sign-in">
+					<a href="sign in.html" target="blank">Sign-in
+						<i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="facebook">
+					<a href="https://www.facebook.com/" target="blank">Facebook
+						<i class="fab fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="instagram">
+					<a href="https://www.instagram.com/accounts/login/?hl=en" target="blank">Instagram
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="youtube">
+					<a href="https://www.youtube.com/" target="blank">Youtube
+						<i class="fab fa-youtube" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="twitter">
+					<a href="https://twitter.com/hashtag/login?lang=en" target="blank">Twitter
+						<i class="fab fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="main">
+			<div>
+				<!--images used to open the lightbox-->
+				<div class="deal-raw">
+					<div class="deal-column">
+						<div class="flip-box">
+  							<div class="flip-box-inner">
+    							<div class="flip-box-front">
+      								<img src="Slideshow-image/1.jpg" style="width: 500px;height: 500px;" onclick="openModal();currentSlide(2)" class="hover-shadow" >
+    							</div>
+    							<div class="flip-box-back">
+      								<h2 style="margin-top: 45%;">"Money doesn't bring happiness, but shopping does:-)"</h2>
+    							</div>
+  							</div>
+						</div>
+						<div class="flip-box">
+  							<div class="flip-box-inner">
+    							<div class="flip-box-front">
+      								<img src="Slideshow-image/2.jpg" style="width: 500px;height: 500px;" onclick="openModal();currentSlide(2)" class="hover-shadow" >
+    							</div>
+    							<div class="flip-box-back">
+      								<h2 style="margin-top: 45%;">"I have enough clothes and shoes I never need to go shopping again..."-said no girl ever</h2>
+    							</div>
+  							</div>
+						</div>
+						<div class="flip-box">
+  							<div class="flip-box-inner">
+    							<div class="flip-box-front">
+      								<img src="Slideshow-image/6.jpg" style="width: 500px;height: 500px;" onclick="openModal();currentSlide(2)" class="hover-shadow" >
+    							</div>
+    							<div class="flip-box-back">
+      								<h2 style="margin-top: 45%;">"Going shopping with money and nothing to find; Going shopping without money..."</h2>
+    							</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-main">
+		<div class="social-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/hashtag/login?lang=en" target="blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>Desined by: Deelaka Wejith Kariyawasam</p>
+		</div>
+	</div>
+</body>
+</html>

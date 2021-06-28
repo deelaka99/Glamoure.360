@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us-Glamour.360</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initail-scale=1"><!--element with name="viewport" makes the website look good on all devices and screen resolutions-->
+	<link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<style type="text/css">
+		.side
+		{
+			height: 850px;
+		}
+		.main
+		{
+			height: 850px;
+		}
+		.men-raw, .men-column
+		{
+			padding: 0 8px;
+		}
+		.men-raw:after
+		{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		/*Create four equal columns that floats next to each others*/
+		.men-column
+		{
+			float: left;
+			width: 60%;
+		}
+		#descriptionP
+		{
+			text-align: center;
+			font-size: 30px;
+		}
+		/*Style inputs with type="text", select elements and textareas*/
+		input[type=text], select, textarea
+		{
+			width: 50%;/*full width*/
+			padding: 12px;/*some padding*/
+			border:1px solid #ccc;/*Gray border*/
+			border-radius: 4px;/*Rounded borders*/
+			box-sizing: border-box;/*Make sure that padding and width stays in place*/
+			margin-top: 6px;/*Add a top margin*/
+			margin-bottom: 16px;/*Bottom margin*/
+			resize: vertical;/*allow the user to vertically resize the textarea*/
+		}
+		/*Style the submit button with a specific background color*/
+		input[type=submit]
+		{
+			background-color: purple;
+			color: black;
+			padding: 12px 20px;
+			border:none;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: all ease 0.5s;
+		}
+		/*when moving the mouse over the submit button, add black colour*/
+		input[type=submit]:hover
+		{
+			background-color: black;
+			color: white;
+		}
+		/*Add a background color and some padding around the form*/
+		.contactForm
+		{
+			color: black;
+			border-radius: 5px;
+			background-color: white;
+			opacity: .7;
+			padding: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function validate()
+		{
+			if(document.contact.order.value == "")
+			{
+				alert("Please provide your order!");
+				document.contact.order.focus();
+				return false;
+			}
+			if(document.contact.name.value == "")
+			{
+				alert("Please provide your name!");
+				document.contact.name.focus();
+				return false;
+			}
+			if(document.contact.email.value == "")
+			{
+				alert("Please provide your email!");
+				document.contact.email.focus();
+				return false;
+			}
+			if(document.contact.email.value != "")
+			{
+				var email = document.contact.email.value;
+				atpos = email.indexOf("@");
+				dotpos = email.lastIndexOf(".");
+
+				if(atpos <1 || (dotpos - atpos < 2))
+				{
+					alert("Please enter correct email!");
+					return false;
+				}
+			}
+			if(document.contact.tel.value == "")
+			{
+				alert("Please provide your telephone no!");
+				document.contact.tel.focus();
+				return false;
+			}
+			if(document.contact.tel.value != "")
+			{
+				var tp = parseInt(document.contact.tel.value);
+				x =  Number.isInteger(tp);
+				if(x != true)
+				{
+					alert("Please enter the valid telephone no!");
+					return false;
+				}
+				else
+				{
+					if(document.contact.merchant.value == "select")
+					{
+						alert("Please provide your merchant!");
+						return false;
+					}	
+					if(document.contact.reason.value == "select")
+					{
+						alert("Please provide your reason!");
+						return false;
+					}
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<h1 style="text-align: center; text-shadow: 2px 2px;">Contact us</h1>
+	</div>
+	<div class="navbar" >
+		<a href="index.html"><i class="fas fa-home"></i>Home</a>
+		<a href="team.html">Our Team</a>
+		<a href="mv.html">Mission & Vission</a>
+		<a href="deals.html">Deals</a>
+		<a href="contact.html">Contact Us</a>
+		<a href="island shops.html">Island wide shops</a>
+		<div class="search-container">
+			<form action="">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="side">
+			<div class="glamer-box">
+				<div class="content">
+					<h3>In here you can contact us for:</h3>
+					<ul type="square">
+						<li>order something,</li>
+						<li>return something,</li>
+						<li>infrom anything.</li>
+					</ul>
+				</div>
+			</div>
+			<p style="text-align: center;">~Other sections~</p>
+			<div class="section">
+				<a href="women.html">Women</a><br>
+				<a href="men.html">Men</a><br>
+				<a href="kids.html">kids</a><br>
+				<a href="gift.html">Gifts</a><br>
+				<a href="watch.html">Watches</a><br>		
+			</div>
+			<nav class="social">
+				<ul>
+					<li class="sign-in">
+						<a href="sign in.html" target="blank">Sign-in
+							<i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="facebook">
+						<a href="https://www.facebook.com/" target="blank">Facebook
+							<i class="fab fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="instagram">
+						<a href="https://www.instagram.com/accounts/login/?hl=en" target="blank">Instagram
+							<i class="fab fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="youtube">
+						<a href="https://www.youtube.com/" target="blank">Youtube
+							<i class="fab fa-youtube" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="twitter">
+						<a href="https://twitter.com/hashtag/login?lang=en" target="blank">Twitter
+							<i class="fab fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="contactForm" style="width: 65%;">
+			<p style="color: purple;">~CONTACT FORM~</p><br>
+			<form action="" name="contact" onsubmit="return validate()">
+				<label for="order">ORDER</label>
+				<input type="text" name="order" id="order"><br>	
+				<labe for="name">NAME</label>
+				<input type="text" name="name" id="name"><br>
+				<label for="email">EMAIL</label>
+				<input type="text" name="email" id="email"><br>
+				<label for="Telephone">TELEPHONE</label>
+				<input type="text" name="tel" id="Telephone"><br>
+				<label for="merchant">MERCHANT  </label>
+				<select id="merchant" name="merchant">
+					<option value="select">--Select--</option>
+					<option value="amazon">Amazon</option>
+					<option value="draz">Daraz</option>
+					<option value="wallmart">WallMart</option>
+				</select><br>
+				<label for="request">NATURE OF REQUEST</label>
+				<select id="request" name="request">
+					<option value="return">Return</option>
+					<option value="receive">I did not receive my package and my tracking</option>
+					<option value="change">Can I change/cancel my order?</option>
+					<option value="other">Other</option>
+				</select><br>
+				<label for="reason">REASON</label>
+				<select id="reason" name="reason">
+					<option value="select">--Select--</option>
+					<option value="want">Do not want</option>
+					<option value="credit">Something is damged or defective-Request credit</option>
+					<option value="replacement">Something is damged or defective-Request replacement</option>
+					<option value="wrong good1">I received the wrong good-Request credit</option>
+					<option value="wrong good2">I received the wrong good-Request replacement</option>
+					<option value="missing good1">My shipment is missing goods-Request credit</option>
+					<option value="missing good1">My shipment is missing goods-Request replacement</option>
+				</select><br>
+				<label for="descript">DESCRIPTION</label><br>
+				<textarea id="descript" name="descript" placeholder="Write something..." style="height: 200px;"></textarea><br>
+				<input type="submit" value="submit">
+			</form>		
+		</div>
+	</div>
+	<div class="footer-main">
+		<div class="social-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/hashtag/login?lang=en" target="blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>Desined by: Deelaka Wejith Kariyawasam</p>
+		</div>
+	</div>
+</body>
+</html>
+

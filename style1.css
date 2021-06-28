@@ -1,0 +1,370 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+ body
+ {
+ 	padding: 0;
+ 	margin: 0;
+ 	background-image:url('b1.jpg');
+ 	background-size: cover;
+ 	font-family: Arial;
+ 	color: white;
+ }
+
+/*style the top navigation bar*/
+.navbar
+{
+	overflow: hidden;/*hide overflow*/
+	background-color: #333;
+}
+/*Style the navigation bar links*/
+.navbar a
+{
+	float: left;/*make sure that the links stay side-by-side*/
+	display: block;/*change the display to block*/
+	color: white;/*white text colour*/
+	padding: 14px 20px;/*add some padding*/
+	text-decoration: none;/*remove underline*/
+}
+/*Right-aligned link*/
+.navbar a.right
+{
+	float: right;/*floaat a link to the right*/
+}
+/*change color on hover/mouse-over*/
+.navbar a:hover
+{
+ 	background-color: purple;
+}
+
+ .navbar ul
+ {
+ 	margin: 0px;
+ 	padding: 0px;
+ 	list-style: none;
+ }
+
+ .navbar ul li
+ { 
+ 	float: left;
+ 	width: 200px;
+ 	height: 40px;
+ 	background-color: black;
+ 	opacity: .8;
+ 	line-height: 40px;
+ 	text-align: center;
+ 	font-size: 20px;
+ }
+
+ .navbar ul li ul li
+ {
+ 	display: none;
+ }
+
+ .navbar ul li:hover ul li
+ {
+ 	display: block;
+ }
+/*style the search box inside the navigation bar*/
+.navbarul li input[type=text]
+{
+	float: right;
+	padding: 6px;
+	border:none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+}
+.navbar .search-container {
+  	float: right;
+}
+.navbar input[type=text] {
+  	padding: 6px;
+  	margin-top: 8px;
+  	font-size: 17px;
+ 	border: none;
+}
+.navbar .search-container button {
+  	float: right;
+  	padding: 6px 10px;
+  	margin-top: 8px;
+ 	margin-right: 16px;
+  	background: #ddd;
+  	font-size: 17px;
+  	border: none;
+  	cursor: pointer;
+}
+.navbar .search-container button:hover {
+  	background: #ccc;
+}
+.header
+{
+	padding: 80px;/*some padding*/
+	text-align: center;/*center the text*/
+	background:purple;/*purple color background*/
+	color: white;/*white text color*/
+}
+.header h1
+{
+	font-size: 40px;
+}
+/*Ensure proper sizing*/
+*{
+	box-sizing: border-box;
+}
+/*column container*/
+.row
+{
+	display: flex;
+	flex: wrap;
+}
+/*create 2 unequal columns that sits next to each other*/
+/*Sidebar/left column*/
+.side
+{
+	flex: 20%;/*set the width of the sidebar*/
+	background-color: black;/*black background color*/
+	padding: 20px;/*some padding*/
+	opacity: .7;
+	height: 3150px;
+}
+.side a
+{
+	text-decoration: none;
+	font-size: 30px;
+	letter-spacing: 10px;
+}
+.side a:hover
+{
+	color: white;
+}
+.glamer-box
+{
+	color: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 9vh;
+	background: #060c21;
+	font-family:'Poppins', sans-serif;
+	position: relative;
+}
+.glamer-box:before
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right:-2px;
+	bottom: -2px;
+	background:#fff;
+	z-index: -1; 
+}
+.glamer-box:after
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right:-2px;
+	bottom: -2px;
+	background:#fff;
+	z-index: -2;
+	filter:blur(40px); 
+}
+.glamer-box:before, .glamer-box:after
+{
+	background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+}
+/*main column*/
+.main
+{
+	flex: 80%;/*set the width of the main content*/
+	background-color: white;/*white background color*/
+	padding: 2px;/*some padding*/
+	height: 3150px;
+}
+/*Responsive layout-when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 700px)
+{
+.row
+{
+	flex-direction: column;
+			}
+}
+/*Responsive layout-when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other*/
+@media screen and (max-width: 400px)
+{
+	.navbar a{
+		float: none;
+		width:100%;
+	}
+}
+.footer-main
+{
+	padding: 20px;/*some padding*/
+	text-align: center;
+	background: #272727;
+}
+.social-icons
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.social-icons ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.social-icons ul li
+{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background-color: purple;
+}
+.social-icons ul li a
+{
+	color: #272727;
+	font-size: 25px;
+}
+.social-icons ul li a i
+{
+	line-height: 50px;
+}
+.footer-bottom
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: purple;
+	padding: 0px;
+}
+.footer-bottom p
+{
+	font-family: arial; 
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.social
+{
+	opacity: 0.2;
+	position: fixed;
+	top: 40%;
+}
+.social:hover
+{
+	opacity: 1;
+}
+.social a
+{
+	color: blue;
+	letter-spacing: 5px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover
+{
+	color: white;
+}
+.social ul
+{
+	list-style-type: none;
+	padding: 0;
+	transform: translateX(-270px);
+}
+.social ul li
+{
+	display: block;
+	margin: 5px;
+	background-color: white;
+	width: 300px;
+	text-align: right;
+	padding: 10px; 
+	border-radius: 0 30px 30px 0;
+	transition: all 1s;
+}
+.social ul li:hover
+{
+	transform: translateX(250px);
+}
+.social ul li.twitter:hover
+{
+	background-color: #55acee;
+}
+.social ul li.facebook:hover
+{
+	background-color: #3d5999;
+}
+.social ul li.instagram:hover
+{
+	background-color: #e4405f;
+}
+.social ul li.youtube:hover
+{
+	background-color: red;
+}
+.social ul li.sign-in:hover
+{
+	background-color: purple;
+}
+.social ul li i
+{
+	text-align: center;
+	margin-left: 14px;
+	padding: 10px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	transform: rotate(0deg);
+}
+.social ul li:hover i
+{
+	transform: rotate(360deg);
+	transition: all 1s;
+}
+.card 
+{
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  	max-width: 300px;
+	display : inline-block;
+  	text-align: center;
+  	font-family: arial;
+}
+.card:hover
+{
+	opacity: 0.7;
+}
+.price 
+{
+  	color: grey;
+ 	font-size: 22px;
+}
+.card button {
+  	border: none;
+  	outline: 0;
+  	padding: 12px;
+  	color: Black;
+  	background-color: #39ff33;
+  	text-align: center;
+  	cursor: pointer;
+  	width: 80%;
+  	font-size: 18px;
+}
+.card button:hover {
+  	background-color: orange;
+}
+.main .card
+{
+	float: left;
+}
+.section a
+{
+	color: yellow;
+}

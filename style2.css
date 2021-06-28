@@ -1,0 +1,303 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background:url('b1.jpg');
+	background-size: cover;
+	font-family: Arial;
+}
+
+/*style the top navigation bar*/
+.navbar
+{
+	overflow: hidden;/*hide overflow*/
+	background-color: #333;
+}
+/*Style the navigation bar links*/
+.navbar a
+{
+	float: left;/*make sure that the links stay side-by-side*/
+	display: block;/*change the display to block*/
+	color: white;/*white text colour*/
+	padding: 14px 20px;/*add some padding*/
+	text-decoration: none;/*remove underline*/
+}
+/*Right-aligned link*/
+.navbar a.right
+{
+	float: right;/*floaat a link to the right*/
+}
+/*change color on hover/mouse-over*/
+.navbar a:hover
+{
+ 	background-color: purple;
+}
+
+ .navbar ul
+ {
+ 	margin: 0px;
+ 	padding: 0px;
+ 	list-style: none;
+ }
+
+ .navbar ul li
+ { 
+ 	float: left;
+ 	width: 200px;
+ 	height: 40px;
+ 	background-color: black;
+ 	opacity: .8;
+ 	line-height: 40px;
+ 	text-align: center;
+ 	font-size: 20px;
+ }
+
+ .navbar ul li ul li
+ {
+ 	display: none;
+ }
+
+ .navbar ul li:hover ul li
+ {
+ 	display: block;
+ }
+/*style the search box inside the navigation bar*/
+.navbarul li input[type=text]
+{
+	float: right;
+	padding: 6px;
+	border:none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+}
+.navbar .search-container {
+  	float: right;
+}
+.navbar input[type=text] {
+  	padding: 6px;
+  	margin-top: 8px;
+  	font-size: 17px;
+ 	border: none;
+}
+.navbar .search-container button {
+  	float: right;
+  	padding: 6px 10px;
+  	margin-top: 8px;
+ 	margin-right: 16px;
+  	background: #ddd;
+  	font-size: 17px;
+  	border: none;
+  	cursor: pointer;
+}
+.navbar .search-container button:hover {
+  	background: #ccc;
+}
+
+.SignInBox
+{
+  	width: 320px;
+ 	height: 420px;
+ 	background: #000;
+ 	color: :#fff;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	box-sizing: border-box;
+ 	padding: 70px 30px;
+ 	position:absolute;
+ 	opacity: .8;
+}
+
+
+
+.avatar
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+ h1
+ {
+ 	margin: 0;
+ 	padding: 0;
+ 	text-align: center;
+ 	font-size: 22px;
+ }
+
+.SignInBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.SignInBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.SignInBox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.SignInBox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #9400D3;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.SignInBox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background:	#800080;
+	color: #000; 
+}
+
+.SignInBox a
+{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: #9400D3;
+}
+
+.SignInBox a:hover
+{
+	cursor: pointer;
+	color: #800080; 
+}
+
+.SignUpBox
+{
+  	width: 500px;
+ 	height: 650px;
+ 	background: #000;
+ 	color: white;
+ 	top: 56%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	box-sizing: border-box;
+ 	padding: 70px 30px;
+ 	position:absolute;
+ 	opacity: .8;
+}
+
+.SignUpBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.SignUpBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.SignUpBox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.SignUpBox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #9400D3;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.SignUpBox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background:	#800080;
+	color: #000; 
+}
+
+.footer-main-div
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 50%;
+	background: #272727;
+	padding: 20px 0px;
+	position: relative;
+}
+.footer-social-icons
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.footer-social-icons ul
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.footer-social-icons ul li
+{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background-color: purple;
+}
+.footer-social-icons ul li a
+{
+	color: #272727;
+	font-size: 25px;
+}
+.footer-social-icons ul li a i
+{
+	line-height: 50px;
+}
+.footer-bottom
+{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: purple;
+	padding: 0px;
+}
+.footer-bottom p
+{
+	font-family: arial; 
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+}

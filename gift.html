@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gift-Glamour.360</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initail-scale=1"><!--element with name="viewport" makes the website look good on all devices and screen resolutions-->
+	<link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script type="text/javascript" src="addToCart.js"></script>
+	<style type="text/css">
+		.side
+		{
+			height: 2200px;
+		}
+		.main
+		{
+			height: 2200px;
+		}
+		.gift-raw, .gift-column
+		{
+			padding: 0 8px;
+		}
+		.gift-raw:after
+		{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		/*Create four equal columns that floats next to each others*/
+		.gift-column
+		{
+			float: left;
+			color: black;
+		}
+		.hover-shadow:hover{opacity: 0.7;}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1 style="text-align: center; text-shadow: 2px 2px;">Gift section</h1>
+	</div>
+	<div class="navbar" >
+		<a href="index.html"><i class="fas fa-home"></i>Home</a>
+		<a href="team.html">Our Team</a>
+		<a href="mv.html">Mission & Vission</a>
+		<a href="deals.html">Deals</a>
+		<a href="contact.html">Contact Us</a>
+		<a href="island shops.html">Island wide shops</a>
+		<div class="search-container">
+			<form action="">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="side">
+			<div class="glamer-box">
+				<div class="content">
+					<h3>In here you can buy:</h3>
+					<ol>
+						<li>Wall pictures</li>
+						<li>Printed mugs</li>
+						<li>Printed pillows</li>
+						<li>Love gifts</li>
+					</ol>
+				</div>
+			</div>
+			<p style="text-align: center;">~Other sections~</p>
+			<div class="section">
+				<a href="women.html">Women</a><br>
+				<a href="men.html">Men</a><br>
+				<a href="kids.html">kids</a><br>
+				<a href="watch.html">Watches</a><br>		
+			</div>
+		</div>
+		<nav class="social">
+			<ul>
+				<li class="sign-in">
+					<a href="sign in.html" target="blank">Sign-in
+						<i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="facebook">
+					<a href="https://www.facebook.com/" target="blank">Facebook
+						<i class="fab fa-facebook" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="instagram">
+					<a href="https://www.instagram.com/accounts/login/?hl=en" target="blank">Instagram
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="youtube">
+					<a href="https://www.youtube.com/" target="blank">Youtube
+						<i class="fab fa-youtube" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="twitter">
+					<a href="https://twitter.com/hashtag/login?lang=en" target="blank">Twitter
+						<i class="fab fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="main">
+			<div>
+				<h2 style="color: black;text-align: left;">~WALL PICTURES~</h2>
+				<!--images used to open the lightbox-->
+				<div class="gift-raw">
+					<div class="gift-column">
+						<div class="card">
+  							<img src="shop content/gift/g1.jpg" style="width:250px;height: 250px">
+  							<h2>~RICHY~</h2>
+   							<h3>Wallpicture1</h3>
+  							<p>LKR.2932.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card">
+  							<img src="shop content/gift/g2.jpg" style="width:250px;height: 250px">
+  							<h2>~RICHY~</h2>
+   							<h3>Wallpicture2</h3>
+  							<p>LKR.1828.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card">
+  							<img src="shop content/gift/g3.jpg" style="width:250px;height: 250px">
+  							<h2>~RICHY~</h2>
+   							<h3>Wallpicture3</h3>
+  							<p>LKR.1330.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2 style="color: black;text-align: left;">~PRINTED MUGS~</h2>
+				<!--images used to open the lightbox-->
+				<div class="gift-raw">
+					<div class="gift-column">
+						<div class="card">
+  							<img src="shop content/gift/g4.jpg" style="width:250px;height: 250px">
+  							<h2>~MANJAREE~</h2>
+   							<h3>Mug1</h3>
+  							<p>LKR.897.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card" style="background-color: pink;">
+  							<img src="shop content/gift/g5.jpg" style="width:250px;height: 250px">
+  							<h2>~ROSSEL~</h2>
+   							<h3>Mug2</h3>
+  							<p>LKR.897.00<h2 style="color: orange;">10<i class="fas fa-percentage"></i></h2> offer</p>
+  							<p><button onclick="offer()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card">
+  							<img src="shop content/gift/g6.jpg" style="width:250px;height: 250px">
+  							<h2>~MANJAREE~</h2>
+   							<h3>Mug3</h3>
+  							<p>LKR.950.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2 style="color: black;text-align: left;">~PRINTED PILLOWS~</h2>
+				<!--images used to open the lightbox-->
+				<div class="gift-raw">
+					<div class="gift-column">
+						<div class="card">
+  							<img src="shop content/gift/g7.jpg" style="width:250px;height: 250px">
+  							<h2>~NIMRU~</h2>
+   							<h3>Pillow1</h3>
+  							<p>LKR.2161.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card">
+  							<img src="shop content/gift/g8.jpg" style="width:250px;height: 250px">
+  							<h2>~NIMRU~</h2>
+   							<h3>Pillow2</h3>
+  							<p>LKR.1809.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card">
+  							<img src="shop content/gift/g9.jpg" style="width:250px;height: 250px">
+  							<h2>~NIMRU~</h2>
+   							<h3>Pillow3</h3>
+  							<p>LKR.2161.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2 style="color: black;text-align: left;">~LOVE GIFTS~</h2>
+				<!--images used to open the lightbox-->
+				<div class="gift-raw">
+					<div class="gift-column">
+					<div class="gift-column">
+						<div class="card">
+  							<img src="shop content/gift/g10.jpg" style="width:250px;height: 250px">
+  							<h2>~LOVERS~</h2>
+   							<h3>Oil lamp</h3>
+  							<p>LKR.1408.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card">
+  							<img src="shop content/gift/g11.jpg" style="width:250px;height: 250px">
+  							<h2>~NIMRU~</h2>
+   							<h3>Wall clock</h3>
+  							<p>LKR.1962.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+						<div class="card">
+  							<img src="shop content/gift/g12.jpg" style="width:250px;height: 250px">
+  							<h2>~CRAFT~</h2>
+   							<h3>Rose Phto frame</h3>
+  							<p>LKR.2161.00</p>
+  							<p><button onclick="add_to_cart()"><i class="fas fa-shopping-cart"></i>Add to Cart</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="footer-main">
+		<div class="social-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/hashtag/login?lang=en" target="blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>Desined by: Deelaka Wejith Kariyawasam</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initail-scale=1"><!--element with name="viewport" makes the website look good on all devices and screen resolutions-->
+	<link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script type="text/javascript">
+		function validate()
+		{
+			if(document.contact.uname.value == "")
+			{
+				alert("Please provide your name!");
+				document.contact.uname.focus();
+				return false;
+			}
+			if(document.contact.password.value == "")
+			{
+				alert("Please provide your password!");
+				document.contact.password.focus();
+				return false;			
+			}
+			if(document.contact.cpassword.value == "")
+			{
+				alert("Please provide your password!");
+				document.contact.cpassword.focus();
+				return false;			
+			}
+			if(document.contact.email.value == "")
+			{
+				alert("Please provide your password!");
+				document.contact.email.focus();
+				return false;			
+			}
+			if(document.contact.address.value == "")
+			{
+				alert("Please provide your password!");
+				document.contact.address.focus();
+				return false;			
+			}
+			if(document.contact.profPic.value == "")
+			{
+				alert("Please provide your password!");
+				document.contact.profPic.focus();
+				return false;			
+			}
+		}
+		function show_alert()
+		{
+			alert("***\\\\Please wait!//***\nchecking details...");
+		}
+	</script>
+</head>
+<body>
+<div class="navbar" >
+	<a href="index.html"><i class="fas fa-home"></i>Home</a>
+	<a href="team.html">Our Team</a>
+	<a href="mv.html">Mission & Vission</a>
+	<a href="deals.html">Dealers</a>
+	<a href="contact.html">Contact Us</a>
+	<a href="island shops.html">Island wide shops</a>
+	<div class="search-container">
+		<form action="">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+	</div>
+</div>
+
+	<div class="SignUpBox" >
+		<h1>Sign-Up Here!</h1>
+		<form action="login.php" method="post" name="contact" onsubmit="return validate()">
+			User name:<input type="text" name="uname" placeholder="Enter Username"><br>
+			Password:<input type="Password" name="password" placeholder="Enter Password"><br>
+			Confirm password:<input type="Password" name="cpassword" placeholder="Confirm your Password"><br>
+			E-mail:<input type="text" name="email" placeholder="Enter E-mail"><br>
+			Address:<input type="text" name="address" placeholder="Enter your address"><br>
+			Profile picture:<input type="file" name="profPic" accept="image/jpeg"><br>
+			<input type="submit" name="Sign-up" value="Sign-Up"><br>
+		</form>
+	</div>
+	<br><br>
+	<div class="footer-main-div">
+		<div class="footer-social-icons">
+			<ul>
+				<li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/hashtag/login?lang=en" target="blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>Design by:Deelaka Wejith Kariyawasam</p>
+		</div>
+	</div>
+</body>
+</html>
